@@ -1,0 +1,43 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* navbar */
+
+.navbar {
+    font-weight: 500;
+}
+
+/* profile image */
+
+.fit-image {
+    width: 100%;
+    object-fit: cover;
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 50%;
+}
+
+/* footer */
+
+footer img {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+/* mobile device */
+
+@media (max-width: 768px) {
+    .fit-image {
+        width: 100%;
+        object-fit: cover;
+        width: 150px !important;
+        height: 150px !important;
+        border-radius: 50%;
+    }
+    /* footer */
+    footer img {
+        width: 17px !important;
+        height: 17px !important;
+    }
+}

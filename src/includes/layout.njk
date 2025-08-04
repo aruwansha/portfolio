@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>{{ title }}</title>
-    <link rel="icon" href="/assets/images/favicon.png" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="/assets/css/custom.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="icon" href="/assets/images/favicon.png"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="/portfolio/assets/css/custom.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-SOME_INTEGRITY_HASH" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://kit.fontawesome.com/ae962bed84.js" crossorigin="anonymous"></script>
   </head>
-  <body>
+  <body class="bg-dark text-white">
     {% include "header.njk" %}
     {{ content | safe }}
     {% include "footer.njk" %}
@@ -22,7 +24,84 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({ offset: 150, duration: 1000 });
+      AOS.init({offset: 150, duration: 1000});
     </script>
+    <script>
+      const translations = {
+        en: {
+          name: "Ilham Febrian Arwansyah",
+          title: "Software Developer",
+          greeting: "Hey, I'm Ilham",
+          description: "Software developer with experience in Android and Front-End Web Development. Passionate about building performant and user-friendly applications.",
+          btnText: "See Projects",
+          educationLabel: "Education",
+          highSchool: "SMAN 8 Kediri",
+          highSchoolMajor: "Math & Science",
+          highSchoolTimeline: "2015 - 2018",
+          college1: "State Polytechnic of Malang",
+          college1Major: "Diploma III - Informatic Management",
+          college1Timeline: "August 2018 - August 2021",
+          workExperienceLabel: "Work Experience",
+          work1: "Badan Kesatuan Bangsa dan Politik",
+          work1Pos: "Lead Programmer",
+          work1Timeline: "Januari 2021 - Februari 2021",
+          work2: "PT BITS Miliartha",
+          work2Pos: "Frontend Developer",
+          work2Timeline: "June 2022 - February 2023",
+          work3: "PT BITS Miliartha",
+          work3Pos: "Android Developer",
+          work3Timeline: "February 2023 - Present"
+        },
+        id: {
+          name: "Ilham Febrian Arwansyah",
+          title: "Pengembang Perangkat Lunak",
+          greeting: "Hai, saya Ilham",
+          description: "Saya seorang software developer dengan pengalaman mengembangkan aplikasi Android dan Web. Saya memiliki passion untuk mempelajari teknologi terkini demi aplikasi yang cepat dan ramah.",
+          btnText: "Lihat Project",
+          educationLabel: "Pendidikan",
+          highSchool: "SMAN 8 Kediri",
+          highSchoolMajor: "Matematika & Ilmu Pengetahuan Alam",
+          highSchoolTimeline: "2015 - 2018",
+          college1: "Politeknik Negeri Malang",
+          college1Major: "Diploma III - Manajemen Informatika",
+          college1Timeline: "Agustus 2018 - Agustus 2021",
+          workExperienceLabel: "Pengalaman Kerja",
+          work1: "Badan Kesatuan Bangsa dan Politik",
+          work1Pos: "Lead Programmer",
+          work1Timeline: "Januari 2021 - Februari 2021",
+          work2: "PT BITS Miliartha",
+          work2Pos: "Frontend Developer",
+          work2Timeline: "Juni 2022 - Februari 2023",
+          work3: "PT BITS Miliartha",
+          work3Pos: "Android Developer",
+          work3Timeline: "Februari 2023 - Sekarang"
+        }
+      };
+
+      function getLangFromURL() {
+        const params = new URLSearchParams(window.location.search);
+        const lang = params.get('lang');
+        if (lang && translations[lang]) 
+          return lang; // hanya terima yang tersedia
+        return 'id'; // default ke Bahasa Indonesia
+      }
+
+      function setLanguage(lang) {
+        document
+          .querySelectorAll('[data-i18n]')
+          .forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[lang] && translations[lang][key]) {
+              el.textContent = translations[lang][key];
+            }
+          });
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const lang = getLangFromURL();
+        setLanguage(lang);
+      });
+    </script>
+
   </body>
 </html>

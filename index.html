@@ -41,6 +41,7 @@
   </nav>
 
     
+<div id="profile" style="height: 1px;"></div>
 <section class="section position-relative" id="profile" data-aos="fade-up">
   <div class="ornament-circle ornament-lg top left"></div>
   <div class="ornament-circle ornament-md center-y right"></div>
@@ -152,10 +153,11 @@
     </div>
   </div>
 </section>
-<section class="section position-relative" id="skills" data-aos="fade-up">
+<div id="skills" style="height: 1px;"></div>
+<section class="section position-relative" data-aos="fade-up">
   <div class="ornament-circle ornament-lg top left"></div>
   <div class="ornament-circle ornament-md center-y right"></div>
-  <div class="container py-5">
+  <div class="container pt-5">
     <div class="text-center mb-4">
       <h3 data-i18n="skill"></h3>
       <p class="small text-muted" data-i18n="skillDesc"></p>
@@ -227,9 +229,10 @@
     </div>
   </div>
 </section>
-<section id="projects" class="py-5" data-aos="fade-up">
-  <div class="container">
-    <div class="text-center mb-5">
+<div id="projects" style="height: 1px;"></div>
+<section class="section position-relative" data-aos="fade-up">
+  <div class="container pt-6">
+    <div class="text-center mb-4">
       <h3 data-i18n="project"></h3>
       <p data-i18n="projectDesc" class="small text-muted"></p>
     </div>
@@ -359,7 +362,7 @@
       </div>
     </div>
 
-    <div class="mb-4">
+    <div>
       <h5 data-i18n="project1"></h5>
       <span class="badge bg-purple">Web Application</span>
       <span class="badge bg-secondary">CodeIgniter 3</span>
@@ -387,27 +390,27 @@
 
   </div>
 </section>
-<section class="section" id="contact" data-aos="fade-up">
-  <div class="container py-5 text-center">
+<div id="contact" style="height: 1px;"></div>
+<section class="section position-relative" data-aos="fade-up">
+  <div class="container pt-6 text-center">
     <h3 data-i18n="contact"></h3>
     <p class="lead mb-4" data-i18n="contactDesc"></p>
-    <div class="mb-3">
-      <a href="mailto:ilhamfebrianarwansyah@gmail.com" class="btn btn-primary me-2" data-i18n="sendEmailLabel">>
-        <i class="fas fa-envelope"></i> 
-      </a>
-      <a href="https://linkedin.com/in/aruwansha" target="_blank" class="btn btn-outline-light me-2">
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </a>
-      <a href="https://github.com/aruwansha" target="_blank" class="btn btn-outline-light">
-        <i class="fab fa-github"></i> GitHub
-      </a>
-    </div>
+    <a href="mailto:ilhamfebrianarwansyah@gmail.com" class="btn btn-primary me-2" data-i18n="sendEmailLabel">>
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://linkedin.com/in/aruwansha" target="_blank" class="btn btn-outline-light me-2">
+      <i class="fab fa-linkedin"></i>
+      LinkedIn
+    </a>
+    <a href="https://github.com/aruwansha" target="_blank" class="btn btn-outline-light">
+      <i class="fab fa-github"></i>
+      GitHub
+    </a>
   </div>
 </section>
 
-
     <footer>
-  <div class="container">
+  <div class="container pt-5">
     <div class="d-flex justify-content-center">
       <div class="row mt-5 w-40">
         <div class="col">
@@ -440,48 +443,6 @@
     </script>
     <script>
       const translations = {
-        en: {
-          profile: "Profile",
-          skill: "Skills",
-          project: "Projects",
-          contact: "Contact",
-          name: "Ilham Febrian Arwansyah",
-          title: "Software Developer",
-          greeting: "Hey, I'm Ilham",
-          description: "Software developer with experience in Android and Front-End Web Development. Passionate about building performant and user-friendly applications.",
-          btnText: "See Projects",
-          educationLabel: "Education",
-          highSchool: "SMAN 8 Kediri",
-          highSchoolMajor: "Math & Science",
-          highSchoolTimeline: "2015 - 2018",
-          college1: "State Polytechnic of Malang",
-          college1Major: "Diploma III - Informatic Management",
-          college1Timeline: "August 2018 - August 2021",
-          workExperienceLabel: "Work Experience",
-          exp1: "Badan Kesatuan Bangsa dan Politik (Internship)",
-          exp1Pos: "Lead Programmer",
-          exp1Timeline: "Januari 2021 - Februari 2021",
-          exp2: "PT BITS Miliartha",
-          exp2Pos: "Frontend Developer",
-          exp2Timeline: "June 2022 - February 2023",
-          exp3: "PT BITS Miliartha",
-          exp3Pos: "Android Developer",
-          exp3Timeline: "February 2023 - Present",
-          skillDesc: "Key stacks I use, along with the technologies behind them.",
-          projectDesc: "Projects I've worked on",
-          project5: "Restaurant POS App",
-          project5Desc: "A native Android application built with Kotlin for restaurant point-of-sale systems. Supports dine-in, kitchen & billing receipt printing, and table management.",
-          project4: "Dashboard Analytic",
-          project4Desc: "Mobile-based analytic application for showing visual report to make decision easily based on data.",
-          project3: "Inventory's Manager",
-          project3Desc: "Android-based stock management application to simplify recording of goods by scanning barcodes.",
-          project2: "Freelancer Marketplace Service",
-          project2Desc: "Web application that connects service providers and service renters",
-          project1: "Research Licensing and Information Center",
-          project1Desc: "Web application for managing research licensing and information services at Bakesbangpol, Malang Regency",
-          contactDesc: "Feel free to reach out via email or connect with me on social media.",
-          sendEmailLabel: "Email Me"
-        },
         id: {
           profile: "Profil",
           skill: "Kemampuan",
@@ -524,6 +485,48 @@
           project1Desc: "Aplikasi berbasis website untuk pusat informasi dan perizinan penelitian Bakesbangpol, Kab. Malang",
           contactDesc: "Tertarik bekerja sama? Hubungi saya lewat email atau media sosial berikut.",
           sendEmailLabel: "Kirim Email"
+        },
+        en: {
+          profile: "Profile",
+          skill: "Skills",
+          project: "Projects",
+          contact: "Contact",
+          name: "Ilham Febrian Arwansyah",
+          title: "Software Developer",
+          greeting: "Hey, I'm Ilham",
+          description: "Software developer with experience in Android and Front-End Web Development. Passionate about building performant and user-friendly applications.",
+          btnText: "See Projects",
+          educationLabel: "Education",
+          highSchool: "SMAN 8 Kediri",
+          highSchoolMajor: "Math & Science",
+          highSchoolTimeline: "2015 - 2018",
+          college1: "State Polytechnic of Malang",
+          college1Major: "Diploma III - Informatic Management",
+          college1Timeline: "August 2018 - August 2021",
+          workExperienceLabel: "Work Experience",
+          exp1: "Badan Kesatuan Bangsa dan Politik (Internship)",
+          exp1Pos: "Lead Programmer",
+          exp1Timeline: "Januari 2021 - Februari 2021",
+          exp2: "PT BITS Miliartha",
+          exp2Pos: "Frontend Developer",
+          exp2Timeline: "June 2022 - February 2023",
+          exp3: "PT BITS Miliartha",
+          exp3Pos: "Android Developer",
+          exp3Timeline: "February 2023 - Present",
+          skillDesc: "Key stacks I use, along with the technologies behind them.",
+          projectDesc: "Projects I've worked on",
+          project5: "Restaurant POS App",
+          project5Desc: "A native Android application built with Kotlin for restaurant point-of-sale systems. Supports dine-in, kitchen & billing receipt printing, and table management.",
+          project4: "Dashboard Analytic",
+          project4Desc: "Mobile-based analytic application for showing visual report to make decision easily based on data.",
+          project3: "Inventory's Manager",
+          project3Desc: "Android-based stock management application to simplify recording of goods by scanning barcodes.",
+          project2: "Freelancer Marketplace Service",
+          project2Desc: "Web application that connects service providers and service renters",
+          project1: "Research Licensing and Information Center",
+          project1Desc: "Web application for managing research licensing and information services at Bakesbangpol, Malang Regency",
+          contactDesc: "Feel free to reach out via email or connect with me on social media.",
+          sendEmailLabel: "Email Me"
         }
       };
 
@@ -532,7 +535,7 @@
         const lang = params.get('lang');
         if (lang && translations[lang]) 
           return lang;
-        return 'id';
+        return 'en';
       }
 
       function setLanguage(lang) {

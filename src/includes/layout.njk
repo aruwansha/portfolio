@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-SOME_INTEGRITY_HASH" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <script src="https://kit.fontawesome.com/ae962bed84.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet"/>
+
   </head>
   <body class="bg-dark text-white">
     {% include "header.njk" %}
@@ -19,7 +20,7 @@
     {% include "footer.njk" %}
 
     <!-- Script -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -46,17 +47,27 @@
           college1Major: "Diploma III - Informatic Management",
           college1Timeline: "August 2018 - August 2021",
           workExperienceLabel: "Work Experience",
-          work1: "Badan Kesatuan Bangsa dan Politik (Internship)",
-          work1Pos: "Lead Programmer",
-          work1Timeline: "Januari 2021 - Februari 2021",
-          work2: "PT BITS Miliartha",
-          work2Pos: "Frontend Developer",
-          work2Timeline: "June 2022 - February 2023",
-          work3: "PT BITS Miliartha",
-          work3Pos: "Android Developer",
-          work3Timeline: "February 2023 - Present",
+          exp1: "Badan Kesatuan Bangsa dan Politik (Internship)",
+          exp1Pos: "Lead Programmer",
+          exp1Timeline: "Januari 2021 - Februari 2021",
+          exp2: "PT BITS Miliartha",
+          exp2Pos: "Frontend Developer",
+          exp2Timeline: "June 2022 - February 2023",
+          exp3: "PT BITS Miliartha",
+          exp3Pos: "Android Developer",
+          exp3Timeline: "February 2023 - Present",
           skillDesc: "Key stacks I use, along with the technologies behind them.",
-          primaryStackLabel: "Stacks I use:",
+          projectDesc: "Projects I've worked on",
+          project5: "Restaurant POS App",
+          project5Desc: "A native Android application built with Kotlin for restaurant point-of-sale systems. Supports dine-in, kitchen & billing receipt printing, and table management.",
+          project4: "Dashboard Analytic",
+          project4Desc: "Mobile-based analytic application for showing visual report to make decision easily based on data.",
+          project3: "Inventory's Manager",
+          project3Desc: "Android-based stock management application to simplify recording of goods by scanning barcodes.",
+          project2: "Freelancer Marketplace Service",
+          project2Desc: "Web application that connects service providers and service renters",
+          project1: "Research Licensing and Information Center",
+          project1Desc: "Web application for managing research licensing and information services at Bakesbangpol, Malang Regency",
           contactDesc: "Feel free to reach out via email or connect with me on social media.",
           sendEmailLabel: "Email Me"
         },
@@ -78,18 +89,29 @@
           college1Major: "Diploma III - Manajemen Informatika",
           college1Timeline: "Agustus 2018 - Agustus 2021",
           workExperienceLabel: "Pengalaman Kerja",
-          work1: "Badan Kesatuan Bangsa dan Politik (Magang)",
-          work1Pos: "Lead Programmer",
-          work1Timeline: "Januari 2021 - Februari 2021",
-          work2: "PT BITS Miliartha",
-          work2Pos: "Frontend Developer",
-          work2Timeline: "Juni 2022 - Februari 2023",
-          work3: "PT BITS Miliartha",
-          work3Pos: "Android Developer",
-          work3Timeline: "Februari 2023 - Sekarang",
+          exp1: "Badan Kesatuan Bangsa dan Politik (Magang)",
+          exp1Pos: "Lead Programmer",
+          exp1Timeline: "Januari 2021 - Februari 2021",
+          exp2: "PT BITS Miliartha",
+          exp2Pos: "Frontend Developer",
+          exp2Timeline: "Juni 2022 - Februari 2023",
+          exp3: "PT BITS Miliartha",
+          exp3Pos: "Android Developer",
+          exp3Timeline: "Februari 2023 - Sekarang",
           skillDesc: "Kombinasi yang saya gunakan, dan teknologi di baliknya.",
           primaryStackLabel: "Stack yang digunakan:",
-          contactDesc: "Jangan ragu untuk menghubungi saya melalui email atau terhubung di media sosial.",
+          projectDesc: "Beberapa proyek yang saya kerjakan.",
+          project5: "Aplikasi POS Resto",
+          project5Desc: "Aplikasi kasir resto berbasis android. Mendukung fitur dine-in, takeaway, print nota dapur & bill, dan manajemen meja.",
+          project4: "Dasbor Analitik",
+          project4Desc: "Aplikasi dashboard berbasis mobile yang menyajikan data laporan secara visual untuk mempermudah pengambilan keputusan berbasis data.",
+          project3: "Pengelola Persediaan",
+          project3Desc: "Aplikasi manajemen stok opname berbasis Android untuk mempermudah pencatatan barang dengan scan barcode.",
+          project2: "Penyedia Jasa Freelancer Marketplace",
+          project2Desc: "Aplikasi Web sebagai penghubung antara penyedia jasa dan penyewa jasa",
+          project1: "Pusat Informasi dan Perizinan Penelitian",
+          project1Desc: "Aplikasi berbasis website untuk pusat informasi dan perizinan penelitian Bakesbangpol, Kab. Malang",
+          contactDesc: "Tertarik bekerja sama? Hubungi saya lewat email atau media sosial berikut.",
           sendEmailLabel: "Kirim Email"
         }
       };
@@ -118,6 +140,6 @@
         setLanguage(lang);
       });
     </script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
   </body>
 </html>

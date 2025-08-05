@@ -34,6 +34,7 @@ body {
 }
 
 .section {
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -154,6 +155,13 @@ body {
   transform: scale(1.1);
 }
 
+/* projects section */
+
+.lightbox .lb-image {
+  max-width: 95vw !important;  /* 95% dari viewport width */
+  max-height: 90vh !important; /* 90% dari viewport height */
+}
+
 /* footer */
 footer img {
   width: 30px !important;
@@ -166,6 +174,7 @@ footer img {
   background: radial-gradient(circle, rgba(99, 102, 241, 0.3), transparent 70%);
   border-radius: 50%;
   z-index: 0;
+  overflow: hidden;
 }
 
 .ornament-blur {
@@ -187,14 +196,18 @@ footer img {
   height: 200px;
 }
 
-
-
 /* mobile device */
 @media (max-width: 768px) {
   /* footer */
   footer img {
     width: 17px !important;
     height: 17px !important;
+  }
+  .card-layer {
+    left: 0px;
+  }
+  .photo-wrapper {
+    right: 80%;
   }
 }
 

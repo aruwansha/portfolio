@@ -29,6 +29,10 @@
     <script>
       const translations = {
         en: {
+          profile: "Profile",
+          skill: "Skills",
+          project: "Projects",
+          contact: "Contact",
           name: "Ilham Febrian Arwansyah",
           title: "Software Developer",
           greeting: "Hey, I'm Ilham",
@@ -42,7 +46,7 @@
           college1Major: "Diploma III - Informatic Management",
           college1Timeline: "August 2018 - August 2021",
           workExperienceLabel: "Work Experience",
-          work1: "Badan Kesatuan Bangsa dan Politik",
+          work1: "Badan Kesatuan Bangsa dan Politik (Internship)",
           work1Pos: "Lead Programmer",
           work1Timeline: "Januari 2021 - Februari 2021",
           work2: "PT BITS Miliartha",
@@ -50,14 +54,21 @@
           work2Timeline: "June 2022 - February 2023",
           work3: "PT BITS Miliartha",
           work3Pos: "Android Developer",
-          work3Timeline: "February 2023 - Present"
+          work3Timeline: "February 2023 - Present",
+          skillLabel: "Skills & Stack",
+          skillDesc: "Key stacks I use, along with the technologies behind them.",
+          primaryStackLabel: "Primary Stacks:"
         },
         id: {
+          profile: "Profil",
+          skill: "Kemampuan",
+          project: "Proyek",
+          contact: "Kontak",
           name: "Ilham Febrian Arwansyah",
           title: "Pengembang Perangkat Lunak",
           greeting: "Hai, saya Ilham",
           description: "Saya seorang software developer dengan pengalaman mengembangkan aplikasi Android dan Web. Saya memiliki passion untuk mempelajari teknologi terkini demi aplikasi yang cepat dan ramah.",
-          btnText: "Lihat Project",
+          btnText: "Lihat Proyek",
           educationLabel: "Pendidikan",
           highSchool: "SMAN 8 Kediri",
           highSchoolMajor: "Matematika & Ilmu Pengetahuan Alam",
@@ -66,7 +77,7 @@
           college1Major: "Diploma III - Manajemen Informatika",
           college1Timeline: "Agustus 2018 - Agustus 2021",
           workExperienceLabel: "Pengalaman Kerja",
-          work1: "Badan Kesatuan Bangsa dan Politik",
+          work1: "Badan Kesatuan Bangsa dan Politik (Magang)",
           work1Pos: "Lead Programmer",
           work1Timeline: "Januari 2021 - Februari 2021",
           work2: "PT BITS Miliartha",
@@ -74,7 +85,10 @@
           work2Timeline: "Juni 2022 - Februari 2023",
           work3: "PT BITS Miliartha",
           work3Pos: "Android Developer",
-          work3Timeline: "Februari 2023 - Sekarang"
+          work3Timeline: "Februari 2023 - Sekarang",
+          skillLabel: "Kemampuan & Stack",
+          skillDesc: "Kombinasi utama yang saya gunakan, dan teknologi di baliknya.",
+          primaryStackLabel: "Stack Utama:"
         }
       };
 
@@ -82,8 +96,8 @@
         const params = new URLSearchParams(window.location.search);
         const lang = params.get('lang');
         if (lang && translations[lang]) 
-          return lang; // hanya terima yang tersedia
-        return 'id'; // default ke Bahasa Indonesia
+          return lang;
+        return 'id';
       }
 
       function setLanguage(lang) {

@@ -23,16 +23,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item align-self-center">
-            <a class="nav-link" href="#profile">Profile</a>
+            <a class="nav-link" href="#profile" data-i18n="profile"></a>
           </li>
           <li class="nav-item align-self-center">
-            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#skills" data-i18n="skill"></a>
           </li>
           <li class="nav-item align-self-center">
-            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#projects" data-i18n="project">Projects</a>
           </li>
           <li class="nav-item align-self-center">
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#contact" data-i18n="contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -40,7 +40,7 @@
   </nav>
 
     
-<section class="about-section position-relative" id="profile" data-aos="fade-up">
+<section class="section position-relative" id="profile" data-aos="fade-up">
   <div class="ornament-circle ornament-lg top left"></div>
   <div class="ornament-circle ornament-md center-y right"></div>
   <div class="container py-5">
@@ -56,7 +56,6 @@
       <div class="col-lg-6 position-relative">
         <div class="profile-card">
           <div class="card-layer"></div>
-
           <div class="photo-wrapper">
             <img src="assets/images/profile-photo.png" alt="Profile Photo">
           </div>
@@ -64,7 +63,7 @@
       </div>
       <div class="col-lg-6 position-relative mt-3">
         <h1 data-i18n="greeting"></h1>
-        <p class="desc" data-i18n="description"></p>
+        <p class="profile-desc" data-i18n="description"></p>
         <a href="#works">
           <button class="btn btn-lg btn-primary" data-i18n="btnText"></button>
         </a>
@@ -73,7 +72,7 @@
   </div>
 
   <div class="container">
-    <h3 data-i18n="educationLabel"></h3>
+    <h5 data-i18n="educationLabel"></h5>
     <div class="timeline-list">
       <div class="timeline-item d-flex">
         <div class="marker mr-3">
@@ -106,7 +105,7 @@
   </div>
 
   <div class="container">
-    <h3 data-i18n="workExperienceLabel"></h3>
+    <h5 data-i18n="workExperienceLabel"></h5>
     <div class="timeline-list">
       <div class="timeline-item d-flex">
         <div class="marker mr-3">
@@ -152,9 +151,81 @@
     </div>
   </div>
 </section>
-  <section id="services" data-aos="fade-up">
-    
-  </section>
+<section class="section position-relative" id="skills" data-aos="fade-up">
+  <div class="ornament-circle ornament-lg top left"></div>
+  <div class="ornament-circle ornament-md center-y right"></div>
+  <div class="container py-5">
+    <div class="text-center mb-4">
+      <h3 data-i18n="skillLabel"></h3>
+      <p class="small text-muted" data-i18n="skillDesc"></p>
+    </div>
+
+    <div class="mb-5">
+      <div class="mb-2">
+        <strong data-i18n="primaryStackLabel"></strong>
+      </div>
+      <div class="d-flex flex-wrap gap-2 justify-content-center">
+        <span class="badge bg-purple px-3 py-2 mr-1">MERN Stack</span>
+        <span class="badge bg-purple px-3 py-2 mr-1">React + Redux</span>
+        <span class="badge bg-purple px-3 py-2 mr-1">React Native + Firebase</span>
+        <span class="badge bg-purple px-3 py-2 mr-1">Kotlin (Clean Architecture & Coroutines)</span>
+      </div>
+    </div>
+
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-5 g-4 justify-content-center">
+      <div class="col text-center">
+        <div class="icon-wrapper mb-2">
+          <img src="assets/images/kotlin.svg" alt="Kotlin" class="img-fluid" style="height: 72px;"/>
+        </div>
+        <div class="small">Kotlin</div>
+
+      </div>
+      <div class="col text-center">
+        <div class="icon-wrapper mb-2">
+          <img src="assets/images/reactjs.svg" alt="React.js" class="img-fluid" style="height: 72px;"/>
+        </div>
+        <div class="small">React & React Native</div>
+
+      </div>
+      <div class="col text-center">
+        <div class="icon-wrapper mb-2">
+          <img src="assets/images/nodejs.svg" alt="Node.js" class="img-fluid" style="height: 72px;"/>
+        </div>
+        <div class="small">Node.js</div>
+      </div>
+      <div class="col text-center">
+        <div class="icon-wrapper mb-2">
+          <img src="assets/images/mongodb.svg" alt="Mongo" class="img-fluid" style="height: 72px;"/>
+        </div>
+        <div class="small">MongoDB</div>
+      </div>
+      <div class="col text-center">
+        <div class="icon-wrapper mb-2">
+          <img src="assets/images/expressjs.svg" alt="Express JS" class="img-fluid" style="height: 72px;"/>
+        </div>
+        <div class="small">Express JS</div>
+      </div>
+      <div class="col text-center">
+        <div class="icon-wrapper mb-2">
+          <img src="assets/images/firebase.svg" alt="Firebase" class="img-fluid" style="height: 72px;"/>
+        </div>
+        <div class="small">Firebase</div>
+      </div>
+      <div class="col text-center">
+        <div class="icon-wrapper mb-2">
+          <img src="assets/images/laravel.svg" alt="Laravel" class="img-fluid" style="height: 72px;"/>
+        </div>
+        <div class="small">Laravel</div>
+      </div>
+      <div class="col text-center">
+        <div class="icon-wrapper mb-2">
+          <img src="assets/images/codeigniter.svg" alt="CSS3" class="img-fluid" style="height: 72px;"/>
+        </div>
+        <div class="small">CodeIgniter</div>
+      </div>
+    </div>
+  </div>
+</section>
   <section id="works" data-aos="fade-up">
     
   </section>
@@ -200,6 +271,10 @@
     <script>
       const translations = {
         en: {
+          profile: "Profile",
+          skill: "Skills",
+          project: "Projects",
+          contact: "Contact",
           name: "Ilham Febrian Arwansyah",
           title: "Software Developer",
           greeting: "Hey, I'm Ilham",
@@ -213,7 +288,7 @@
           college1Major: "Diploma III - Informatic Management",
           college1Timeline: "August 2018 - August 2021",
           workExperienceLabel: "Work Experience",
-          work1: "Badan Kesatuan Bangsa dan Politik",
+          work1: "Badan Kesatuan Bangsa dan Politik (Internship)",
           work1Pos: "Lead Programmer",
           work1Timeline: "Januari 2021 - Februari 2021",
           work2: "PT BITS Miliartha",
@@ -221,14 +296,21 @@
           work2Timeline: "June 2022 - February 2023",
           work3: "PT BITS Miliartha",
           work3Pos: "Android Developer",
-          work3Timeline: "February 2023 - Present"
+          work3Timeline: "February 2023 - Present",
+          skillLabel: "Skills & Stack",
+          skillDesc: "Key stacks I use, along with the technologies behind them.",
+          primaryStackLabel: "Primary Stacks:"
         },
         id: {
+          profile: "Profil",
+          skill: "Kemampuan",
+          project: "Proyek",
+          contact: "Kontak",
           name: "Ilham Febrian Arwansyah",
           title: "Pengembang Perangkat Lunak",
           greeting: "Hai, saya Ilham",
           description: "Saya seorang software developer dengan pengalaman mengembangkan aplikasi Android dan Web. Saya memiliki passion untuk mempelajari teknologi terkini demi aplikasi yang cepat dan ramah.",
-          btnText: "Lihat Project",
+          btnText: "Lihat Proyek",
           educationLabel: "Pendidikan",
           highSchool: "SMAN 8 Kediri",
           highSchoolMajor: "Matematika & Ilmu Pengetahuan Alam",
@@ -237,7 +319,7 @@
           college1Major: "Diploma III - Manajemen Informatika",
           college1Timeline: "Agustus 2018 - Agustus 2021",
           workExperienceLabel: "Pengalaman Kerja",
-          work1: "Badan Kesatuan Bangsa dan Politik",
+          work1: "Badan Kesatuan Bangsa dan Politik (Magang)",
           work1Pos: "Lead Programmer",
           work1Timeline: "Januari 2021 - Februari 2021",
           work2: "PT BITS Miliartha",
@@ -245,7 +327,10 @@
           work2Timeline: "Juni 2022 - Februari 2023",
           work3: "PT BITS Miliartha",
           work3Pos: "Android Developer",
-          work3Timeline: "Februari 2023 - Sekarang"
+          work3Timeline: "Februari 2023 - Sekarang",
+          skillLabel: "Kemampuan & Stack",
+          skillDesc: "Kombinasi utama yang saya gunakan, dan teknologi di baliknya.",
+          primaryStackLabel: "Stack Utama:"
         }
       };
 
@@ -253,8 +338,8 @@
         const params = new URLSearchParams(window.location.search);
         const lang = params.get('lang');
         if (lang && translations[lang]) 
-          return lang; // hanya terima yang tersedia
-        return 'id'; // default ke Bahasa Indonesia
+          return lang;
+        return 'id';
       }
 
       function setLanguage(lang) {

@@ -222,6 +222,10 @@ footer img {
   margin-top: 11rem !important;
 }
 
+.pt-6 {
+  padding-top: 5rem !important;
+}
+
 .top {
   top: 0;
 }

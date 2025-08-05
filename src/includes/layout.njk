@@ -29,48 +29,6 @@
     </script>
     <script>
       const translations = {
-        en: {
-          profile: "Profile",
-          skill: "Skills",
-          project: "Projects",
-          contact: "Contact",
-          name: "Ilham Febrian Arwansyah",
-          title: "Software Developer",
-          greeting: "Hey, I'm Ilham",
-          description: "Software developer with experience in Android and Front-End Web Development. Passionate about building performant and user-friendly applications.",
-          btnText: "See Projects",
-          educationLabel: "Education",
-          highSchool: "SMAN 8 Kediri",
-          highSchoolMajor: "Math & Science",
-          highSchoolTimeline: "2015 - 2018",
-          college1: "State Polytechnic of Malang",
-          college1Major: "Diploma III - Informatic Management",
-          college1Timeline: "August 2018 - August 2021",
-          workExperienceLabel: "Work Experience",
-          exp1: "Badan Kesatuan Bangsa dan Politik (Internship)",
-          exp1Pos: "Lead Programmer",
-          exp1Timeline: "Januari 2021 - Februari 2021",
-          exp2: "PT BITS Miliartha",
-          exp2Pos: "Frontend Developer",
-          exp2Timeline: "June 2022 - February 2023",
-          exp3: "PT BITS Miliartha",
-          exp3Pos: "Android Developer",
-          exp3Timeline: "February 2023 - Present",
-          skillDesc: "Key stacks I use, along with the technologies behind them.",
-          projectDesc: "Projects I've worked on",
-          project5: "Restaurant POS App",
-          project5Desc: "A native Android application built with Kotlin for restaurant point-of-sale systems. Supports dine-in, kitchen & billing receipt printing, and table management.",
-          project4: "Dashboard Analytic",
-          project4Desc: "Mobile-based analytic application for showing visual report to make decision easily based on data.",
-          project3: "Inventory's Manager",
-          project3Desc: "Android-based stock management application to simplify recording of goods by scanning barcodes.",
-          project2: "Freelancer Marketplace Service",
-          project2Desc: "Web application that connects service providers and service renters",
-          project1: "Research Licensing and Information Center",
-          project1Desc: "Web application for managing research licensing and information services at Bakesbangpol, Malang Regency",
-          contactDesc: "Feel free to reach out via email or connect with me on social media.",
-          sendEmailLabel: "Email Me"
-        },
         id: {
           profile: "Profil",
           skill: "Kemampuan",
@@ -113,6 +71,48 @@
           project1Desc: "Aplikasi berbasis website untuk pusat informasi dan perizinan penelitian Bakesbangpol, Kab. Malang",
           contactDesc: "Tertarik bekerja sama? Hubungi saya lewat email atau media sosial berikut.",
           sendEmailLabel: "Kirim Email"
+        },
+        en: {
+          profile: "Profile",
+          skill: "Skills",
+          project: "Projects",
+          contact: "Contact",
+          name: "Ilham Febrian Arwansyah",
+          title: "Software Developer",
+          greeting: "Hey, I'm Ilham",
+          description: "Software developer with experience in Android and Front-End Web Development. Passionate about building performant and user-friendly applications.",
+          btnText: "See Projects",
+          educationLabel: "Education",
+          highSchool: "SMAN 8 Kediri",
+          highSchoolMajor: "Math & Science",
+          highSchoolTimeline: "2015 - 2018",
+          college1: "State Polytechnic of Malang",
+          college1Major: "Diploma III - Informatic Management",
+          college1Timeline: "August 2018 - August 2021",
+          workExperienceLabel: "Work Experience",
+          exp1: "Badan Kesatuan Bangsa dan Politik (Internship)",
+          exp1Pos: "Lead Programmer",
+          exp1Timeline: "Januari 2021 - Februari 2021",
+          exp2: "PT BITS Miliartha",
+          exp2Pos: "Frontend Developer",
+          exp2Timeline: "June 2022 - February 2023",
+          exp3: "PT BITS Miliartha",
+          exp3Pos: "Android Developer",
+          exp3Timeline: "February 2023 - Present",
+          skillDesc: "Key stacks I use, along with the technologies behind them.",
+          projectDesc: "Projects I've worked on",
+          project5: "Restaurant POS App",
+          project5Desc: "A native Android application built with Kotlin for restaurant point-of-sale systems. Supports dine-in, kitchen & billing receipt printing, and table management.",
+          project4: "Dashboard Analytic",
+          project4Desc: "Mobile-based analytic application for showing visual report to make decision easily based on data.",
+          project3: "Inventory's Manager",
+          project3Desc: "Android-based stock management application to simplify recording of goods by scanning barcodes.",
+          project2: "Freelancer Marketplace Service",
+          project2Desc: "Web application that connects service providers and service renters",
+          project1: "Research Licensing and Information Center",
+          project1Desc: "Web application for managing research licensing and information services at Bakesbangpol, Malang Regency",
+          contactDesc: "Feel free to reach out via email or connect with me on social media.",
+          sendEmailLabel: "Email Me"
         }
       };
 
@@ -121,7 +121,7 @@
         const lang = params.get('lang');
         if (lang && translations[lang]) 
           return lang;
-        return 'id';
+        return 'en';
       }
 
       function setLanguage(lang) {
